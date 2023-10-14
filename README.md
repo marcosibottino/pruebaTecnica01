@@ -1,6 +1,8 @@
 # PruebaTecnica01
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+Trabajando en la pruebaTecnica hecha por @midudev con Angular! Work in Progress...
+
+https://github.com/midudev/pruebas-tecnicas/blob/main/pruebas/01-reading-list/README.md
 
 ## Development server
 
