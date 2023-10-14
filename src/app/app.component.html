@@ -1,0 +1,22 @@
+<p class="pTecnica">Prueba Tecnica: <strong>01</strong></p>
+<hr>
+
+<p class="lDisponibles"><span class="cantidad"><strong>{{length}}</strong></span> libros disponibles</p>
+
+<div class="bookContainer">
+  <div class="column" *ngFor="let book of books">
+      <img [src]="book.book.cover" (click)="addLecture(book.book)" alt="Imagen" class="img">
+  </div>
+</div>
+
+<div class="lectureContainer">
+  <p class="title">Lista de lectura</p>
+  <div class="listLecture">
+    <div class="booksContainer" *ngFor="let lecture of lectures">
+      <div class="column">
+        <button class="close" (click)="deleteLecture(lecture)">X</button>
+          <img [src]="lecture.cover" class="img">
+      </div>
+    </div>
+  </div>
+</div>
