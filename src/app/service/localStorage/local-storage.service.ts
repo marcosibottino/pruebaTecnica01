@@ -35,4 +35,13 @@ export class LocalStorageService {
       console.error('Error al eliminar de localStorage:', error);
     }
   }
+
+  includesItem(key: string, value: any) {
+    const keys = localStorage.getItem(key);
+    if(keys?.includes(value)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

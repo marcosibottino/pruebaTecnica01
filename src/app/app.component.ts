@@ -35,11 +35,12 @@ export class AppComponent {
 
   addLecture(book: any) {
       console.log(book);
-      if(this.lectures.includes(book)){
-        console.log('Libro YA agregado.');
-      } else {
+      const lectures = this.localStorage.getItem('lectures');
+      if(!this.lectures.includes(book) && !lectures.includes(book)){
         this.lectures.push(book);
         this.localStorage.setItem('lectures', this.lectures);
+      } else {
+        console.log('Libro YA agregado.');
       }
   }
 
